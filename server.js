@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res)=>{
-    res.send('Buenas');
-})
+app.use(express.static('public'));
+
 
 app.get('/mensaje', (req, res)=>{
     res.send('Este finde me pongo con el proyecto final 🙄');
